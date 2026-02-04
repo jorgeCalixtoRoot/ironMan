@@ -10,7 +10,7 @@
 
 let obtenerVengador = async (id) => {
     try {
-        const url = `https://akabab.github.io/superhero-api/api/id/346.json`
+        const url = `https://akabab.github.io/superhero-api/api/id/${id}.json`
         const api = await fetch(url)
         const json = await api.json()
         // console.log(json)
@@ -21,4 +21,4 @@ let obtenerVengador = async (id) => {
     }
 }
 
-obtenerVengador()
+obtenerVengador(346)
