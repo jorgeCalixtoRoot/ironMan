@@ -15,7 +15,7 @@ let obtenerVengador = async (id) => {
         const json = await api.json()
         // console.log(json)
 
-        console.log(`Nombre Real: ${json.name} y su inteligencia ${json.intelligence} que está dentro de powerstats`)
+        console.log(`Nombre Real: ${json.name} y su inteligencia ${json.powerstats.intelligence} que está dentro de powerstats`)
     } catch (error) {
         console.error('Error al contactar con la base de datos de Avengers')
     }
