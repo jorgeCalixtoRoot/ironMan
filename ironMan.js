@@ -8,7 +8,7 @@
 // En el catch, imprime: "Error al contactar con la base de datos de Avengers".
 // Si quieres seleccionar tu propio super heroe, puedes revisar → https://akabab.github.io/superhero-api/api/glossary.html
 
-let obtenerVengador = async (id) => {
+const obtenerVengador = async (id) => {
     try {
         const url = `https://akabab.github.io/superhero-api/api/id/${id}.json`
         const api = await fetch(url)
